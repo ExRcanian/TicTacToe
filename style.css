@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.gameboard {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(3, auto);
+}
+
+.space {
+    border: 2px solid black;
+    height: 8rem;
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+.winner {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 4rem;
+}
+
+.winner.show {
+    display: flex;
+}
+
+.winner button {
+    font-size: 3rem;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    border: 0.5rem solid black;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.winner button:hover {
+    color: white;
+    background-color: black;
+}
+
+.nameStart {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 4rem;
+    display: flex;
+    gap: 10px;
+}
+
+.nameStart input {
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+
+.gameStart {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    border: 2pxrem solid black;
+    font-weight: bold;
+}
